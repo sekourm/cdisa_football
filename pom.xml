@@ -44,7 +44,19 @@
         </dependency>
         <dependency>
             <groupId>org.jtwig</groupId>
+            <artifactId>jtwig-spring</artifactId>
+            <version>${jtwig.version}</version>
+            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>org.jtwig</groupId>
             <artifactId>jtwig-render-extension</artifactId>
+            <version>${jtwig.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.jtwig</groupId>
+            <artifactId>jtwig-spring-asset-extension</artifactId>
             <version>${jtwig.version}</version>
             <scope>compile</scope>
         </dependency>
