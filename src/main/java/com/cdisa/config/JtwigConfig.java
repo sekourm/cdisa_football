@@ -16,6 +16,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableWebMvc
 @Configuration
 public class JtwigConfig extends WebMvcConfigurerAdapter implements JtwigViewResolverConfigurer {
+
     @Override
     public void configure(JtwigViewResolver viewResolver) {
         viewResolver.setRenderer(new JtwigRenderer(EnvironmentConfigurationBuilder.configuration()
@@ -34,4 +35,5 @@ public class JtwigConfig extends WebMvcConfigurerAdapter implements JtwigViewRes
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("public/**").addResourceLocations("classpath:public/");
     }
+
 }
